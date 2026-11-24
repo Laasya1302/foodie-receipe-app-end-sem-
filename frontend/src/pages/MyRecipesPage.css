@@ -1,0 +1,122 @@
+.my-recipes-page {
+  padding: 40px 20px 80px;
+}
+
+.my-recipes-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.my-recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+.my-recipe-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.my-recipe-thumb-box {
+  position: relative;
+  height: 200px;
+  background: var(--bg-secondary);
+}
+
+.my-recipe-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-badge-floating {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(43, 24, 16, 0.85);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+}
+
+.my-recipe-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.my-recipe-rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.my-recipe-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.my-recipe-title a {
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.my-recipe-title a:hover {
+  color: var(--primary);
+}
+
+.my-recipe-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.my-recipe-meta {
+  display: flex;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px dashed var(--border-color);
+  border-bottom: 1px dashed var(--border-color);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.my-recipe-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.my-recipe-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.my-recipe-actions .btn {
+  flex: 1;
+  padding: 7px 10px;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 600px) {
+  .my-recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}

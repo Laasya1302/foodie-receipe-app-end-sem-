@@ -1,0 +1,237 @@
+.splash-page {
+  padding-bottom: 60px;
+}
+
+.splash-hero {
+  padding: 80px 0 60px;
+  background: radial-gradient(circle at 50% 20%, rgba(226, 109, 36, 0.08) 0%, rgba(250, 247, 242, 0) 70%);
+  text-align: center;
+}
+
+.splash-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+}
+
+.splash-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  margin-bottom: 24px;
+  border: 1px solid rgba(226, 109, 36, 0.2);
+}
+
+.splash-title {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: var(--secondary);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.splash-title-highlight {
+  color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), #D35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.splash-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 720px;
+}
+
+.splash-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.splash-stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px 32px;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+}
+
+.splash-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.splash-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-color);
+}
+
+/* Features */
+.splash-features {
+  margin-top: 70px;
+}
+
+.splash-section-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.splash-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.feature-box {
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feature-icon-box.orange {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.feature-icon-box.brown {
+  background: #F4EBE3;
+  color: var(--secondary);
+}
+
+.feature-icon-box.red {
+  background: #FDEDEC;
+  color: #E74C3C;
+}
+
+.feature-icon-box.gold {
+  background: #FEF9E7;
+  color: #F39C12;
+}
+
+.feature-box h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.feature-box p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Gallery Banner */
+.splash-gallery-section {
+  margin-top: 80px;
+}
+
+.splash-gallery-banner {
+  background: linear-gradient(135deg, var(--secondary) 0%, #30190D 100%),
+              url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  background-blend-mode: overlay;
+  border-radius: var(--radius-lg);
+  padding: 70px 40px;
+  color: #FFFFFF;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-text {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.gallery-text h2 {
+  font-size: 2.3rem;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.gallery-text p {
+  font-size: 1.1rem;
+  color: #E6D7CE;
+  margin-bottom: 28px;
+}
+
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .splash-title {
+    font-size: 2.4rem;
+  }
+  .splash-stats-bar {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .splash-stat-divider {
+    display: none;
+  }
+}

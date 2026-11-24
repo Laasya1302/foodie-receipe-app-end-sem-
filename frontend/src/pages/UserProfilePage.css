@@ -1,0 +1,175 @@
+.user-profile-page {
+  padding: 40px 20px 80px;
+}
+
+.profile-hero-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+
+.profile-banner-bg {
+  height: 160px;
+  background: linear-gradient(135deg, #4A2E1B 0%, #E26D24 100%);
+}
+
+.profile-hero-body {
+  padding: 0 40px 30px;
+  position: relative;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.profile-avatar-wrapper {
+  margin-top: -65px;
+  flex-shrink: 0;
+}
+
+.profile-large-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+  box-shadow: var(--shadow-md);
+  background: #FFFFFF;
+}
+
+.profile-meta-main {
+  flex: 1;
+  padding-top: 16px;
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.profile-display-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--secondary);
+  line-height: 1.2;
+}
+
+.profile-email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.profile-action-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-bio-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 14px;
+}
+
+.profile-join-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Stats Bar */
+.profile-stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+  padding: 20px 40px;
+}
+
+.profile-stat-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.stat-icon.orange {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.stat-icon.red {
+  background: #FDEDEC;
+  color: #E74C3C;
+}
+
+.stat-icon.gold {
+  background: #FEF9E7;
+  color: #F39C12;
+}
+
+.profile-stat-num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.profile-stat-lbl {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.profile-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .profile-hero-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 24px;
+  }
+  .profile-name-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-email, .profile-join-date {
+    justify-content: center;
+  }
+  .profile-stats-bar {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .profile-stat-divider {
+    display: none;
+  }
+}
